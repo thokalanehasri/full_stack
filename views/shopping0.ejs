@@ -1,0 +1,97 @@
+<html>
+		<head>
+			<title>SHOPPING WEBSITE</title>
+			  <meta charset="utf-8">
+			<meta name="viewport" content="width=device-width" initial-scale=1>
+			<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous"> 
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"> 
+		</head>
+		<style>
+			div{
+				color: black;
+				text-align: center;
+			}
+			img{
+				height: 200px;
+                width: 300px;
+				padding-bottom: 20px;
+			}
+			button{
+				margin-top: 10px;
+			}
+			body{
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+				background-image: url("https://as1.ftcdn.net/v2/jpg/01/27/10/08/1000_F_127100868_g5yUwYaLOOxRsc6XrhpFnm43Op8kCFJj.jpg");
+				background-size:100%;
+				color:green;
+			}
+			.display-6{
+				animation: blink 6s infinite;
+			  }
+			  @keyframes blink {
+				0% {
+				  opacity: 1;
+				}
+				100% {
+				  opacity: 0;
+				  color: green;
+				}
+			  }
+			  .col:hover{
+				background-image: url("");
+			  }
+		</style>
+        <body>
+			 <div class = "container fluid">
+				<div class = "row" >
+					<div class = "col-lg-1"><i class = "bi bi-list-ul" style = "color:green; font-size:45px;"></i></div>
+					<div class = "col-lg-1"><i class = "bi bi-person-circle" style = "color:green; font-size:45px;"></i></div>
+					<div class = "col-lg-8"><h2 class = "display-6" style = "font-weight:bold;"> ORGANING PRODUCTS SHOPPING</h2></div>
+					<div class = "col-lg-1"><i class = "bi bi-house-fill" style = "color:green; font-size:45px;"></i></div>
+					<div class = "col-lg-1"><i class = "bi bi-cart4" style = "color:green; font-size:45px;"></i></div>
+				</div><br>
+				<div class = "row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3">
+					<div class = "col"> 
+						<div>
+						<img src = "https://i.pinimg.com/originals/25/98/b3/2598b3c377008419e8dd1947639b63cf.jpg">
+						<div class = "caption">
+							<p><b>Caterpillar Killer</b><br>
+							Quantity: 20liters</p></div>
+						<form action = "addToCart" method = "GET">COST: <input type = "text" style = "width:50px; font-weight:bold;" name = "cost" value="999/-"><del><small>1500/-</small></del><br></div>
+					<button type = "submit" class = "btn btn-outline-success" name = "item" value ="Caterpillar Killer">ADD TO CART <i class = "bi bi-cart4"></i></button></form>
+					<form action = "addToOrders" method = "GET"><button type = "submit" class = "btn btn-outline-success" name = "item" value = "Caterpillar Killer">ORDER NOW <i class = "bi bi-basket-fill"></i></button></form></div>
+					<div class = "col">
+						<div>
+							<img src = "https://wp-public-fs.s3.ap-south-1.amazonaws.com/tasks/15f995560c50598a2bd0ab690a1edacca5b94bfb677ccd/images/neem-oil-5f9d6c955ad5b.jpg" class = "img rounded">
+							<div class = "caption">
+								<p><b>Neem oil extract</b><br>
+									
+									Quantity: 50ml</p></div>
+							<form action = "addToCart" method = "GET">COST: <input type = "text" style = "width:50px; font-weight:bold;" name = "cost" value = "500/-"><del><small>900/-</small></del><br></div>
+						<button type = "submit" class = "btn btn-outline-success" name = "item" value = "Neem oil extract">ADD TO CART <i class = "bi bi-cart4"></i></button></form>
+						<form action = "addToOrders" method = "GET"><button type = "submit" class = "btn btn-outline-success" name = "item" value = "Neem oil extract">ORDER NOW <i class = "bi bi-basket-fill"></i></button></form>
+						<div class = "col"> 
+						<div>
+						<img src = "https://n4.sdlcdn.com/imgs/j/f/6/Amruth-Organic-Fertilizers-Bio-fertilizer-SDL937915063-1-e0c83.jpg">
+						<div class = "caption">
+							<p><b>Abacil</b><br>
+							Quantity: 20liters</p></div>
+						<form action = "addToCart" method = "GET">COST: <input type = "text" style = "width:50px; font-weight:bold;" name = "cost" value="1900/-"><del><small>2000/-</small></del><br></div>
+					<button type = "submit" class = "btn btn-outline-success" name = "item" value = "Abacil">ADD TO CART <i class = "bi bi-cart4"></i></button></form>
+					<form action = "addToOrders" method = "GET"><button type = "submit" class = "btn btn-outline-success" name = "item" value = "Abacil">ORDER NOW <i class = "bi bi-basket-fill"></i></button></form></div>
+					<div class = "col"> 
+						<div>
+						<img src = "https://www.organicfertilizer.in/herbal-and-bio-organic-products/rasrang.jpg">
+						<div class = "caption">
+							<p><b>Rasrang</b><br>
+							Quantity: 50ml</p></div>
+						<form action = "addToCart" method = "GET">COST: <input type = "text" style = "width:50px; font-weight:bold;" name = "cost" value="1500/-"><del><small>2500/-</small></del><br></div>
+					<button type = "submit" class = "btn btn-outline-success" name = "item" value = "Rasrang">ADD TO CART <i class = "bi bi-cart4"></i></button></form>
+					<form action = "addToOrders" method = "GET"><button type = "submit" class = "btn btn-outline-success" name = "item" value = "Rasrang">ORDER NOW <i class = "bi bi-basket-fill"></i></button></form></div>
+					</div>
+				<form action = "cart" method = "GET">
+					<center><input type = "submit" class = "btn btn-outline-success" style = "color: white; width:50%; font-weight:bold; background-color: green;" value = "GO TO CART"></center>
+				</form><br><br></div>
+		</body>
+</html>

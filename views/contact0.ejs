@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<head>
+    <title> CONTACT-US </title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"> 
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" 
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
+   integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" 
+   integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous"> 
+   <style> 
+    .display-3{
+        animation: blink 2s infinite;
+    }
+    @keyframes blink {
+        0% {
+          opacity: 1;
+        }
+        100% {
+          opacity: 1;
+          color: white;
+        }
+      }
+      body{
+        background-image:url("https://upload.wikimedia.org/wikipedia/commons/2/29/I_Went_Into_The_Woods_%28217742803%29.jpeg");
+        background-size: 100%;background-repeat: no-repeat;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      }
+   </style>
+
+</head>
+<body>
+    <h3 class = "display-3" style = "padding-left:100px;"><b>CONTACT US!!!</b></h3>
+    <h1  style = "color:white; padding-left:725px;">Thank you for shopping!!!<i class = "bi bi-emoji-smile"></i></h1>
+        <div class = "jumbotron" style = "margin-left: 47%; width: 40%;border-radius: 4%;width: 650px; height: 470px;padding-top: 10px;">
+            <h1 style = "font-weight: bold; font-size: 30px; color: black;">Give your Feedback here!!!</h1>
+            <form action = "contactsubmit" method = "GET" >
+                <div class = "form-group">
+                   <b>NAME: </b>
+                    <input type = "text" name = "name" class="form-control" placeholder = "Enter your name..."><br>
+                    <b>EMAIL: </b>
+                    <input type = "email" name = "email" class = "form-control" placeholder = "Enter your email..."><br>
+                    <b>PHONE NUMBER: </b>
+                    <input type = "phone" name = "phone" class = "form-control" placeholder = "Enter your phone number..."><br>
+                    <b>REVIEW/FEEDBACK: </b>
+                    <input style = "height:50px;" type = "text" name = "review" class = "form-control" placeholder = "Enter your feedback about product...">
+                </div><br>
+                <center><input type = "submit" class = "btn btn-success" style = "width:30%;font-weight: bold;" value = "SUBMIT"><br></center>
+            </form></div>
+</body> 
+</html>
